@@ -5,19 +5,19 @@
                 class="flex h-0 items-center justify-center gap-2 text-2xl font-bold"
             >
                 <li>
-                    <NuxtLink to="/">Home</NuxtLink>
+                    <NuxtLink to="/">На главную</NuxtLink>
                 </li>
                 <li>
-                    <NuxtLink to="/about">About</NuxtLink>
+                    <NuxtLink to="/about">О сайте</NuxtLink>
                 </li>
                 <li>
-                    <NuxtLink to="/sign-in">Sign-in</NuxtLink>
+                    <NuxtLink to="/sign-in">Войти</NuxtLink>
                 </li>
                 <li>
-                    <NuxtLink to="/sign-up">Sign-up</NuxtLink>
+                    <NuxtLink to="/sign-up">Зарегистрироваться</NuxtLink>
                 </li>
                 <li>
-                    <NuxtLink to="/dashboard">Dashboard</NuxtLink>
+                    <NuxtLink to="/dashboard">Панель</NuxtLink>
                 </li>
             </ul>
         </nav>
@@ -26,3 +26,9 @@
         </div>
     </header>
 </template>
+
+<style scoped>
+li:not(:last-child)::after {
+    content: "|";
+}
+</style>

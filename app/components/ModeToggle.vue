@@ -6,7 +6,7 @@ const colorMode = useColorMode();
     <UiButton
         variant="outline"
         size="icon"
-        class="group/toggle size-8"
+        class="size-8"
         @click="
             colorMode.preference =
                 colorMode.preference === 'light' ? 'dark' : 'light'

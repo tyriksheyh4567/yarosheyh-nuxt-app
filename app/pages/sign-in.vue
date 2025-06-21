@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { authClient } from "~/lib/auth-client";
 
-const { data: session } = await authClient.useSession(useFetch);
 const email = ref("");
 const password = ref("");
 
@@ -56,11 +55,7 @@ const handleSignIn = async () => {
                     <UiButton
                         type="submit"
                         class="w-full"
-                        @click="
-                            if (session === null) {
-                                handleSignIn;
-                            }
-                        "
+                        @click="handleSignIn()"
                     >
                         Войти
                     </UiButton>

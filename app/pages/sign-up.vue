@@ -32,8 +32,11 @@ const handleSignUp = async () => {
     <main>
         <UiCard class="mx-auto max-w-sm">
             <UiCardHeader>
-                <UiCardTitle class="text-xl">Sign Up</UiCardTitle>
-                <UiCardDescription>idk</UiCardDescription>
+                <UiCardTitle class="text-xl">Зарегистрироваться</UiCardTitle>
+                <UiCardDescription
+                    >Зарегистрируйтесь, чтобы стать полноценным
+                    пользователем!</UiCardDescription
+                >
             </UiCardHeader>
             <UiCardContent>
                 <div class="grid gap-4">
