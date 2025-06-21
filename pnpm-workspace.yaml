@@ -6,3 +6,12 @@ onlyBuiltDependencies:
   - unrs-resolver
   - vue-demi
   - workerd
+
+packages:
+  - '@parcel/watcher'
+  - '@tailwindcss/oxide'
+  - esbuild
+  - sharp
+  - unrs-resolver
+  - vue-demi
+  - workerd
