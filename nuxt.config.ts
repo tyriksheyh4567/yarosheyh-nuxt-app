@@ -11,6 +11,7 @@ export default defineNuxtConfig({
         "motion-v/nuxt",
         "@vueuse/nuxt",
         "@nuxtjs/color-mode",
+        "@nuxthub/core",
     ],
     vite: { plugins: [tailwindcss()] },
     css: ["~/assets/css/main.css"],
@@ -24,6 +25,11 @@ export default defineNuxtConfig({
         pageTransition: {
             name: "page",
             mode: "out-in",
+        },
+    },
+    nitro: {
+        experimental: {
+            openAPI: true,
         },
     },
 });
