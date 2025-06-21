@@ -4,7 +4,7 @@ export const authClient = createAuthClient({
     baseURL: process.env.BETTER_AUTH_URL,
     plugins: [
         oneTapClient({
-            clientId: process.env.BETTER_AUTH_CLIENT_ID as string,
+            clientId: process.env.GOOGLE_CLIENT_ID as string,
             cancelOnTapOutside: true,
             autoSelect: false,
             context: "signin",
