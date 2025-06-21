@@ -16,7 +16,7 @@ Copy **.env.example** to **.env**:
 cp .env.example .env
 ```
 
-Fill **.env** with your own values:
+Fill **.env** with your **own** values:
 
 ```dotenv
 BETTER_AUTH_SECRET="generate-it"
