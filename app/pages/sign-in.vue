@@ -85,7 +85,7 @@ const handleSignIn = async () => {
                         @click="
                             async () => {
                                 await authClient.signIn.social({
-                                    provider: 'github',
+                                    provider: 'google',
                                     callbackURL: '/',
                                 });
                             }
