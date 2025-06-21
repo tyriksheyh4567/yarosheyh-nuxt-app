@@ -68,13 +68,11 @@ const handleSignIn = async () => {
                         variant="outline"
                         class="w-full"
                         @click="
-                            if (session === null) {
-                                async () => {
-                                    await authClient.signIn.social({
-                                        provider: 'github',
-                                        callbackURL: '/',
-                                    });
-                                };
+                            async () => {
+                                await authClient.signIn.social({
+                                    provider: 'github',
+                                    callbackURL: '/',
+                                });
                             }
                         "
                     >
@@ -85,13 +83,11 @@ const handleSignIn = async () => {
                         variant="outline"
                         class="w-full"
                         @click="
-                            if (session === null) {
-                                async () => {
-                                    await authClient.signIn.social({
-                                        provider: 'google',
-                                        callbackURL: '/',
-                                    });
-                                };
+                            async () => {
+                                await authClient.signIn.social({
+                                    provider: 'github',
+                                    callbackURL: '/',
+                                });
                             }
                         "
                     >
