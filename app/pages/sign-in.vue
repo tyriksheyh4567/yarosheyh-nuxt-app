@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { authClient } from "~/lib/auth-client";
 
+const { data: session } = await authClient.useSession(useFetch);
 const email = ref("");
 const password = ref("");
 
@@ -55,7 +56,11 @@ const handleSignIn = async () => {
                     <UiButton
                         type="submit"
                         class="w-full"
-                        @click="handleSignIn"
+                        @click="
+                            if (session === null) {
+                                handleSignIn;
+                            }
+                        "
                     >
                         Войти
                     </UiButton>
@@ -63,11 +68,13 @@ const handleSignIn = async () => {
                         variant="outline"
                         class="w-full"
                         @click="
-                            async () => {
-                                await authClient.signIn.social({
-                                    provider: 'github',
-                                    callbackURL: '/',
-                                });
+                            if (session === null) {
+                                async () => {
+                                    await authClient.signIn.social({
+                                        provider: 'github',
+                                        callbackURL: '/',
+                                    });
+                                };
                             }
                         "
                     >
@@ -78,11 +85,13 @@ const handleSignIn = async () => {
                         variant="outline"
                         class="w-full"
                         @click="
-                            async () => {
-                                await authClient.signIn.social({
-                                    provider: 'google',
-                                    callbackURL: '/',
-                                });
+                            if (session === null) {
+                                async () => {
+                                    await authClient.signIn.social({
+                                        provider: 'google',
+                                        callbackURL: '/',
+                                    });
+                                };
                             }
                         "
                     >
