@@ -2,7 +2,8 @@ import { betterAuth } from "better-auth";
 import { LibsqlDialect } from "@libsql/kysely-libsql";
 
 const dialect = new LibsqlDialect({
-    url: process.env.DATABASE_URL || "file:main.db",
+    url: process.env.DATABASE_URL as string,
+    authToken: process.env.DATABASE_AUTH_TOKEN,
 });
 
 export const auth = betterAuth({
