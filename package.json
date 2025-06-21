@@ -12,7 +12,9 @@
     "shadcn-vue": "pnpm dlx shadcn-vue@latest",
     "lint": "oxlint . && eslint .",
     "lint:fix": "oxlint --fix . && eslint --fix .",
-    "prepare": "husky"
+    "prepare": "husky",
+    "db:generate": "pnpm dlx @better-auth/cli@latest generate",
+    "db:migrate": "pnpm dlx @better-auth/cli@latest migrate"
   },
   "dependencies": {
     "@libsql/client": "^0.15.9",
