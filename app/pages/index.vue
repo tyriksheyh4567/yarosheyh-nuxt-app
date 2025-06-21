@@ -7,6 +7,7 @@ if (!session.value) {
 } else {
     nickName = session.value.user.name;
 }
+await authClient.oneTap();
 </script>
 
 <template>
