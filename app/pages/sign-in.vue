@@ -76,7 +76,7 @@ const handleSignIn = async () => {
                             }
                         "
                     >
-                        <Icon name="grommet-icons:github" size="18" />
+                        <Icon name="grommet-icons:github" size="20" />
                         Войти через GitHub
                     </UiButton>
                     <UiButton
@@ -94,7 +94,7 @@ const handleSignIn = async () => {
                         <svg
                             version="1.1"
                             xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 48 48"
+                            viewBox="0 0 50 50"
                             xmlns:xlink="http://www.w3.org/1999/xlink"
                             style="display: block"
                         >
