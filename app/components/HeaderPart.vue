@@ -30,5 +30,6 @@
 <style scoped>
 li:not(:last-child)::after {
     content: "|";
+    margin: 0.5rem;
 }
 </style>
