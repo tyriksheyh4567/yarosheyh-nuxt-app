@@ -1,9 +1,7 @@
 <template>
     <header>
         <nav class="py-8">
-            <ul
-                class="flex h-0 items-center justify-center gap-2 text-2xl font-bold"
-            >
+            <ul class="flex h-0 items-center justify-center text-2xl font-bold">
                 <li>
                     <NuxtLink to="/">На главную</NuxtLink>
                 </li>
