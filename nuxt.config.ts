@@ -29,7 +29,6 @@ export default defineNuxtConfig({
     },
     hub: {
         cache: true,
-        ai: true,
     },
     nitro: {
         experimental: {
