@@ -1,6 +1,6 @@
 import { betterAuth } from "better-auth";
 import { LibsqlDialect } from "@libsql/kysely-libsql";
-import { openAPI } from "better-auth/plugins";
+import { openAPI, captcha } from "better-auth/plugins";
 
 const dialect = new LibsqlDialect({
     url: process.env.DATABASE_URL as string,
@@ -25,5 +25,11 @@ export const auth = betterAuth({
     emailAndPassword: {
         enabled: true,
     },
-    plugins: [openAPI()],
+    plugins: [
+        openAPI(),
+        captcha({
+            provider: "cloudflare-turnstile",
+            secretKey: process.env.TURNSTILE_SECRET_KEY as string,
+        }),
+    ],
 });
