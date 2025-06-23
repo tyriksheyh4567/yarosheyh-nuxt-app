@@ -72,7 +72,6 @@ const handleSignUp = async () => {
                     <UiButton type="button" class="w-full" @click="handleSignUp"
                         >Создать аккаунт</UiButton
                     >
-                    <NuxtTurnstile />
                 </div>
                 <div class="mt-4 text-center text-sm">
                     Уже есть аккаунт?

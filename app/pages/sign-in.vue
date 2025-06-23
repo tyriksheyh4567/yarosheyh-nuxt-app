@@ -113,7 +113,6 @@ const handleSignIn = async () => {
                         </svg>
                         Войти через Google
                     </UiButton>
-                    <NuxtTurnstile />
                 </div>
                 <div class="mt-4 text-center text-sm">
                     Нет аккаунта?
