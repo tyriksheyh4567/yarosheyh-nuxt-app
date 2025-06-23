@@ -14,7 +14,7 @@
                 <li class="after:m-2 after:content-['|']">
                     <NuxtLink to="/sign-up">Зарегистрироваться</NuxtLink>
                 </li>
-                <li class="after:m-2 after:content-['|']">
+                <li>
                     <NuxtLink to="/dashboard">Панель</NuxtLink>
                 </li>
             </ul>
