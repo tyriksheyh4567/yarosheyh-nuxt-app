@@ -3,6 +3,7 @@ import { authClient } from "~/lib/auth-client";
 
 const email = ref("");
 const password = ref("");
+const turnstileToken = process.env.TURNSTILE_TOKEN;
 
 const handleSignIn = async () => {
     await authClient.signIn.email(
@@ -10,6 +11,11 @@ const handleSignIn = async () => {
             email: email.value,
             password: password.value,
             callbackURL: "/",
+            fetchOptions: {
+                headers: {
+                    "x-captcha-response": turnstileToken,
+                },
+            },
         },
         {
             onError(context) {
