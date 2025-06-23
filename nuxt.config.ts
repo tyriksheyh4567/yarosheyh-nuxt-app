@@ -27,9 +27,7 @@ export default defineNuxtConfig({
             mode: "out-in",
         },
     },
-    nitro: {
-        experimental: {
-            openAPI: true,
-        },
+    hub: {
+        cache: true,
     },
 });
