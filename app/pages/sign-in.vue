@@ -3,7 +3,6 @@ import { authClient } from "~/lib/auth-client";
 
 const email = ref("");
 const password = ref("");
-const turnstileToken = process.env.TURNSTILE_TOKEN;
 
 const handleSignIn = async () => {
     await authClient.signIn.email(
@@ -11,11 +10,6 @@ const handleSignIn = async () => {
             email: email.value,
             password: password.value,
             callbackURL: "/",
-            fetchOptions: {
-                headers: {
-                    "x-captcha-response": turnstileToken,
-                },
-            },
         },
         {
             onError(context) {
@@ -119,6 +113,7 @@ const handleSignIn = async () => {
                         </svg>
                         Войти через Google
                     </UiButton>
+                    <NuxtTurnstile />
                 </div>
                 <div class="mt-4 text-center text-sm">
                     Нет аккаунта?

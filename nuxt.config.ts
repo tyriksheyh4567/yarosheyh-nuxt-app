@@ -12,6 +12,7 @@ export default defineNuxtConfig({
         "@vueuse/nuxt",
         "@nuxtjs/color-mode",
         "@nuxthub/core",
+        "@nuxtjs/turnstile",
     ],
     vite: { plugins: [tailwindcss()] },
     css: ["~/assets/css/main.css"],
@@ -33,6 +34,14 @@ export default defineNuxtConfig({
     nitro: {
         experimental: {
             openAPI: true,
+        },
+    },
+    turnstile: {
+        siteKey: process.env.NUXT_PUBLIC_TURNSTILE_SITE_KEY,
+    },
+    runtimeConfig: {
+        turnstile: {
+            secretKey: process.env.NUXT_TURNSTILE_SECRET_KEY,
         },
     },
 });
