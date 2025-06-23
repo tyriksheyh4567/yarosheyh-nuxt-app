@@ -29,6 +29,7 @@
     "@tanstack/vue-table": "^8.21.3",
     "@unhead/vue": "^2.0.10",
     "@vee-validate/zod": "^4.15.1",
+    "@vite-pwa/nuxt": "1.0.4",
     "@vueuse/core": "^13.4.0",
     "@vueuse/nuxt": "13.4.0",
     "better-auth": "^1.2.9",
