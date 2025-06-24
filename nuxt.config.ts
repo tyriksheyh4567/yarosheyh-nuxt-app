@@ -23,9 +23,6 @@ export default defineNuxtConfig({
         classSuffix: "",
     },
     app: {
-        head: {
-            title: "YaroSheyh | Nuxt 4",
-        },
         pageTransition: {
             name: "page",
             mode: "out-in",
