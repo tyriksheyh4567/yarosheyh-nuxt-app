@@ -17,7 +17,7 @@
                 <li class="after:m-2 after:content-['|']">
                     <NuxtLink to="/sign-up">Зарегистрироваться</NuxtLink>
                 </li>
-                <li>
+                <li class="after:m-2 after:content-['|']">
                     <NuxtLink to="/dashboard">Панель</NuxtLink>
                 </li>
                 <li>
@@ -25,7 +25,6 @@
                         to="https://github.com/tyriksheyh4567/yarosheyh-nuxt-app"
                         target="_blank"
                     >
-                        <Icon name="grommet-icons:github" />
                         GitHub
                     </NuxtLink>
                 </li>
@@ -54,15 +53,13 @@
                         to="https://github.com/tyriksheyh4567/yarosheyh-nuxt-app"
                         target="_blank"
                     >
-                        <Icon name="grommet-icons:github" />
                         GitHub
                     </NuxtLink>
                 </li>
             </ul>
         </nav>
-        <span class="inline-block">
-            <hr class="mx-auto my-1 h-1 w-md bg-black dark:bg-white" />
-        </span>
+
+        <hr class="mx-auto my-1 h-1 w-dvw bg-black dark:bg-white" />
         <div class="flex flex-col items-center justify-center gap-3 py-8">
             <ModeToggle />
             <UiButton @click="$pwa?.install()">Установить</UiButton>
