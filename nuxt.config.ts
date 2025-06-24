@@ -94,11 +94,7 @@ export default defineNuxtConfig({
                 },
             ],
             id: "https://yarosheyh.ru/",
-            display_override: [
-                "window-controls-overlay",
-                "fullscreen",
-                "minimal-ui",
-            ],
+            display_override: ["fullscreen", "minimal-ui"],
             display: "standalone",
             screenshots: [
                 {
