@@ -15,6 +15,7 @@ export default defineNuxtConfig({
         "@nuxtjs/turnstile",
         "@vite-pwa/nuxt",
         "@nuxtjs/device",
+        "@nuxtjs/seo",
     ],
     vite: { plugins: [tailwindcss()] },
     css: ["~/assets/css/main.css"],
@@ -131,6 +132,19 @@ export default defineNuxtConfig({
         devOptions: {
             enabled: true,
             type: "module",
+        },
+    },
+    site: {
+        url: "https://yarosheyh.ru",
+        name: "YaroSheyh | Nuxt 4",
+    },
+    seo: {
+        meta: {
+            description: "Это веб-сайт, написанный с использованием Nuxt 4.",
+            themeColor: {
+                dark: "#000000",
+                light: "#ffffff",
+            },
         },
     },
 });
