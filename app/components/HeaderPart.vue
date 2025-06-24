@@ -40,6 +40,15 @@
                 <li>
                     <NuxtLink to="/dashboard">Панель</NuxtLink>
                 </li>
+                <li>
+                    <NuxtLink
+                        to="https://github.com/tyriksheyh4567/yarosheyh-nuxt-app"
+                        target="_blank"
+                    >
+                        <Icon name="grommet-icons:github" />
+                        GitHub
+                    </NuxtLink>
+                </li>
             </ul>
         </nav>
         <hr class="mx-auto my-1 h-1 w-md bg-black dark:bg-white" />
