@@ -42,7 +42,7 @@
                 </li>
             </ul>
         </nav>
-        <hr class="my-1 h-1 bg-white dark:bg-black" />
+        <hr class="my-1 h-1 bg-black dark:bg-white" />
         <div class="flex flex-col items-center justify-center gap-3">
             <ModeToggle />
             <UiButton @click="$pwa?.install()">Установить</UiButton>
