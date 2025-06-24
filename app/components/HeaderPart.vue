@@ -42,7 +42,7 @@
                 </li>
             </ul>
         </nav>
-        <div class="flex flex-col items-center justify-center gap-2">
+        <div class="flex flex-col items-center justify-center gap-3">
             <ModeToggle />
             <UiButton @click="$pwa?.install()">Установить</UiButton>
         </div>
