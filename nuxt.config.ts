@@ -93,11 +93,7 @@ export default defineNuxtConfig({
                 },
             ],
             id: "https://yarosheyh.ru/",
-            display_override: [
-                "fullscreen",
-                "minimal-ui",
-                "window-controls-overlay",
-            ],
+            display_override: ["fullscreen", "minimal-ui"],
             display: "standalone",
             screenshots: [
                 {
@@ -129,6 +125,24 @@ export default defineNuxtConfig({
             ],
             lang: "ru",
             orientation: "portrait",
+            protocol_handlers: [
+                {
+                    protocol: "web+yrsh",
+                    url: "/",
+                },
+                {
+                    protocol: "web+yrsh=login",
+                    url: "/login",
+                },
+                {
+                    protocol: "web+yrsh-signup",
+                    url: "/sign-up",
+                },
+                {
+                    protocol: "web+yrsh-about",
+                    url: "/about",
+                },
+            ],
         },
         workbox: {
             navigateFallback: "/",
