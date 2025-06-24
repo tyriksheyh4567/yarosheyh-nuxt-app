@@ -129,16 +129,6 @@ export default defineNuxtConfig({
             ],
             lang: "ru",
             orientation: "portrait",
-            protocol_handlers: [
-                {
-                    protocol: "tel",
-                    url: "8-913-932-46-51",
-                },
-                {
-                    protocol: "mailto",
-                    url: "admin@yarosheyh.ru",
-                },
-            ],
         },
         workbox: {
             navigateFallback: "/",
