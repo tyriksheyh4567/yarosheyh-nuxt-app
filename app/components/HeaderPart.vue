@@ -44,6 +44,9 @@
         </nav>
         <div class="flex items-center justify-center">
             <ModeToggle />
+            <div v-if="$device.isMobile">
+                <UiButton @click="$pwa?.install">Установить</UiButton>
+            </div>
         </div>
     </header>
 </template>
