@@ -1,5 +1,5 @@
 <template>
-    <article class="prose lg:prose-xl">
+    <article class="prose lg:prose-xl text-black dark:text-white">
         <h1>Политика конфедициальности</h1>
         <p>
             Единственные куки, что я использую, нужны для аутентификации. И
