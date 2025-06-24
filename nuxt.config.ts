@@ -130,6 +130,9 @@ export default defineNuxtConfig({
             enabled: true,
             type: "module",
         },
+        client: {
+            installPrompt: true,
+        },
     },
     site: {
         url: "https://yarosheyh.ru",

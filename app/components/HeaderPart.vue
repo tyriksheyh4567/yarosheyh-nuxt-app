@@ -42,10 +42,10 @@
                 </li>
             </ul>
         </nav>
-        <div class="flex items-center justify-center">
+        <div class="flex flex-col items-center justify-center">
             <ModeToggle />
             <div v-if="$device.isMobile">
-                <UiButton @click="$pwa?.install">Установить</UiButton>
+                <UiButton @click="$pwa?.install()">Установить</UiButton>
             </div>
         </div>
     </header>
