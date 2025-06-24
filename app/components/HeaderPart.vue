@@ -59,7 +59,7 @@
             </ul>
         </nav>
 
-        <hr class="mx-auto my-1 h-1 w-lvw bg-black dark:bg-white" />
+        <hr class="mx-auto my-1 h-1 w-md bg-black dark:bg-white" />
         <div class="flex flex-col items-center justify-center gap-3 py-8">
             <ModeToggle />
             <UiButton @click="$pwa?.install()">Установить</UiButton>
