@@ -17,7 +17,12 @@
                 >
                     Это мой личный веб-сайт.
                 </UiCardItem>
-                <UiCardItem :translate-z="100" class="mt-4 w-full">
+                <UiCardItem
+                    :translate-z="100"
+                    :rotate-x="20"
+                    :rotate-z="-10"
+                    class="mt-4 w-full"
+                >
                     <img
                         src="~/assets/img/about.png"
                         height="1000"
@@ -38,8 +43,6 @@
                     </UiCardItem>
                     <UiCardItem
                         :translate-z="20"
-                        :rotate-x="20"
-                        :rotate-z="-10"
                         as="button"
                         class="rounded-xl bg-black px-4 py-2 text-xs font-bold text-white dark:bg-white dark:text-black"
                     >
