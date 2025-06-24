@@ -94,7 +94,12 @@ export default defineNuxtConfig({
                 },
             ],
             id: "https://yarosheyh.ru/",
-            display: "fullscreen",
+            display_override: [
+                "window-controls-overlay",
+                "fullscreen",
+                "minimal-ui",
+            ],
+            display: "standalone",
             screenshots: [
                 {
                     src: "screenshots/pc_main.png",
