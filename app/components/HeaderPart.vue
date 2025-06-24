@@ -41,12 +41,19 @@
                     <NuxtLink to="/dashboard">Панель</NuxtLink>
                 </li>
             </ul>
-            <div class="m-2 flex flex-col items-center justify-center">
+            <div
+                v-if="$device.isMobile"
+                class="flex flex-col items-center justify-center p-2"
+            >
                 <ModeToggle />
-                <div v-if="$device.isMobile">
-                    <UiButton @click="$pwa?.install()">Установить</UiButton>
-                </div>
+                <UiButton @click="$pwa?.install()">Установить</UiButton>
             </div>
         </nav>
+        <div
+            v-if="$device.isDesktopOrTablet"
+            class="flex items-center justify-center"
+        >
+            <ModeToggle />
+        </div>
     </header>
 </template>
