@@ -16,6 +16,7 @@ export default defineNuxtConfig({
         "@vite-pwa/nuxt",
         "@nuxtjs/device",
         "@nuxtjs/seo",
+        "nuxt-csurf",
     ],
     vite: { plugins: [tailwindcss()] },
     css: ["~/assets/css/main.css"],
