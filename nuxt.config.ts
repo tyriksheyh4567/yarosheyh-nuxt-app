@@ -93,7 +93,11 @@ export default defineNuxtConfig({
                 },
             ],
             id: "https://yarosheyh.ru/",
-            display_override: ["fullscreen", "minimal-ui"],
+            display_override: [
+                "fullscreen",
+                "minimal-ui",
+                "window-controls-overlay",
+            ],
             display: "standalone",
             screenshots: [
                 {
@@ -123,6 +127,8 @@ export default defineNuxtConfig({
                     label: "Страница панели пользователя (тёмная тема).",
                 },
             ],
+            lang: "ru",
+            orientation: "portrait",
         },
         workbox: {
             navigateFallback: "/",
