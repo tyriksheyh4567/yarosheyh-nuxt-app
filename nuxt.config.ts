@@ -35,9 +35,6 @@ export default defineNuxtConfig({
         experimental: {
             openAPI: true,
         },
-        routeRules: {
-            "/": { prerender: true },
-        },
     },
     turnstile: {
         siteKey: process.env.NUXT_PUBLIC_TURNSTILE_SITE_KEY,
