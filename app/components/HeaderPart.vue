@@ -43,7 +43,7 @@
             </ul>
             <div
                 v-if="$device.isMobile"
-                class="flex flex-col items-center justify-center p-2"
+                class="flex flex-col items-center justify-center py-2"
             >
                 <ModeToggle />
                 <UiButton @click="$pwa?.install()">Установить</UiButton>
