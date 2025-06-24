@@ -20,6 +20,15 @@
                 <li>
                     <NuxtLink to="/dashboard">Панель</NuxtLink>
                 </li>
+                <li>
+                    <NuxtLink
+                        to="https://github.com/tyriksheyh4567/yarosheyh-nuxt-app"
+                        target="_blank"
+                    >
+                        <Icon name="grommet-icons:github" />
+                        GitHub
+                    </NuxtLink>
+                </li>
             </ul>
             <ul
                 v-if="$device.isMobile"
