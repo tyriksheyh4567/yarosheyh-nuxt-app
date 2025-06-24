@@ -93,7 +93,11 @@ export default defineNuxtConfig({
                 },
             ],
             id: "https://yarosheyh.ru/",
-            display_override: ["fullscreen", "minimal-ui"],
+            display_override: [
+                "fullscreen",
+                "minimal-ui",
+                "window-controls-overlay",
+            ],
             display: "standalone",
             screenshots: [
                 {
@@ -127,20 +131,12 @@ export default defineNuxtConfig({
             orientation: "portrait",
             protocol_handlers: [
                 {
-                    protocol: "web+yrsh",
-                    url: "/",
+                    protocol: "tel",
+                    url: "8-913-932-46-51",
                 },
                 {
-                    protocol: "web+yrsh=login",
-                    url: "/login",
-                },
-                {
-                    protocol: "web+yrsh-signup",
-                    url: "/sign-up",
-                },
-                {
-                    protocol: "web+yrsh-about",
-                    url: "/about",
+                    protocol: "mailto",
+                    url: "admin@yarosheyh.ru",
                 },
             ],
         },
