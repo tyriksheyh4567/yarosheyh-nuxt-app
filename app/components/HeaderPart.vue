@@ -60,9 +60,14 @@
         </nav>
 
         <hr
+            v-if="$device.isDesktopOrTablet"
             class="mx-auto my-1 h-1 w-md rounded-sm border-0 bg-black dark:bg-white"
         />
-        <div class="flex flex-col items-center justify-center gap-3 py-8">
+        <hr
+            v-if="$device.isMobile"
+            class="mx-auto my-1 h-1 w-24 rounded-sm border-0 bg-black dark:bg-white"
+        />
+        <div class="flex flex-col items-center justify-center gap-3 py-4">
             <ModeToggle />
             <UiButton @click="$pwa?.install()">Установить</UiButton>
         </div>
