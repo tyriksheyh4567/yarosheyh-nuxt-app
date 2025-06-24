@@ -19,7 +19,7 @@
                 </UiCardItem>
                 <UiCardItem :translate-z="100" class="mt-4 w-full">
                     <img
-                        src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        src="~/assets/img/main.png"
                         height="1000"
                         width="1000"
                         class="h-60 w-full rounded-xl object-cover group-hover/card:shadow-xl"
