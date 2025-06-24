@@ -137,7 +137,7 @@ export default defineNuxtConfig({
     },
     site: {
         url: "https://yarosheyh.ru",
-        name: "YaroSheyh | Nuxt 4",
+        name: "YaroSheyh",
     },
     seo: {
         meta: {

@@ -15,7 +15,7 @@
                     translate-z="60"
                     class="mt-2 max-w-sm text-sm text-neutral-500 dark:text-neutral-300"
                 >
-                    Hover over this card to unleash the power of CSS perspective
+                    Это мой личный веб-сайт.
                 </UiCardItem>
                 <UiCardItem :translate-z="100" class="mt-4 w-full">
                     <img
