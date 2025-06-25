@@ -16,17 +16,12 @@ export default defineNuxtConfig({
         "@vite-pwa/nuxt",
         "@nuxtjs/device",
         "@nuxtjs/seo",
+        "@nuxtjs/i18n",
     ],
     vite: { plugins: [tailwindcss()] },
     css: ["~/assets/css/main.css"],
     colorMode: {
         classSuffix: "",
-    },
-    app: {
-        pageTransition: {
-            name: "page",
-            mode: "out-in",
-        },
     },
     hub: {
         cache: true,
@@ -160,5 +155,13 @@ export default defineNuxtConfig({
                 light: "#ffffff",
             },
         },
+    },
+    i18n: {
+        defaultLocale: "ru",
+        locales: [
+            { code: "ru", name: "Русский", file: "ru.json" },
+            { code: "en", name: "English", file: "en.json" },
+        ],
+        skipSettingLocaleOnNavigate: true,
     },
 });
