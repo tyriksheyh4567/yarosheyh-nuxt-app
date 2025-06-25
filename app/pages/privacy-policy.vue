@@ -1,5 +1,5 @@
 <template>
-    <div class="rounded-sm border-5 bg-blue-600 dark:bg-blue-400">
+    <div class="rounded-sm border-5 bg-blue-200 p-8">
         <article class="prose lg:prose-xl">
             <h1>Политика конфедициальности</h1>
             <p>
