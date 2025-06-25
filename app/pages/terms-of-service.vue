@@ -1,5 +1,5 @@
 <template>
-    <div class="rounded-sm border-5 bg-blue-200 p-8">
+    <div class="size-1/2 rounded-sm border-0 bg-blue-200 p-8">
         <article class="prose lg:prose-xl">
             <h1>Условия обслуживания</h1>
             <p>
