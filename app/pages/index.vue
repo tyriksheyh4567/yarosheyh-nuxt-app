@@ -20,7 +20,7 @@ const pwaIsNotInstalled = () => {
 </script>
 
 <template>
-    <main>
+    <main class="flex-col">
         <h1 class="text-4xl">Привет, {{ nickName }}!</h1>
         <UiButton
             @click="
