@@ -1,3 +1,8 @@
+<script setup lang="ts">
+import { UiToaster } from "#components";
+import "vue-sonner/style.css";
+</script>
+
 <template>
     <NuxtLayout>
         <NuxtPwaAssets />
@@ -8,6 +13,7 @@
                 mode: 'out-in',
             }"
         />
+        <UiToaster />
     </NuxtLayout>
 </template>
 

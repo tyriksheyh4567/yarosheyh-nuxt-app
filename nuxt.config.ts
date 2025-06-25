@@ -17,7 +17,6 @@ export default defineNuxtConfig({
         "@nuxtjs/device",
         "@nuxtjs/seo",
         "@nuxt/fonts",
-        "@nuxt/test-utils/module",
     ],
     vite: { plugins: [tailwindcss()] },
     css: ["~/assets/css/main.css"],
@@ -30,6 +29,9 @@ export default defineNuxtConfig({
     nitro: {
         experimental: {
             openAPI: true,
+        },
+        routeRules: {
+            registerWebManifestInRouteRules: {},
         },
     },
     turnstile: {
@@ -133,15 +135,16 @@ export default defineNuxtConfig({
                 client_mode: ["navigate-existing", "auto"],
             },
         },
-        workbox: {
-            navigateFallback: "/",
-        },
         devOptions: {
             enabled: true,
             type: "module",
         },
         client: {
             installPrompt: true,
+        },
+        registerType: "autoUpdate",
+        workbox: {
+            globPatterns: ["**/*.{js,css,html,ico,png,svg}"],
         },
     },
     site: {
