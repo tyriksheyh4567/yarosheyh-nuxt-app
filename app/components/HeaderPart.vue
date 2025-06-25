@@ -69,7 +69,6 @@
         <div class="flex flex-col items-center justify-center gap-3 py-6">
             <ModeToggle />
             <UiButton @click="$pwa?.install()">Установить</UiButton>
-            <LangSwitcher />
         </div>
     </header>
 </template>
