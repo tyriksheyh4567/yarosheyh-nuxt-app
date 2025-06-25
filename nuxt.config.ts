@@ -128,6 +128,14 @@ export default defineNuxtConfig({
             ],
             lang: "ru",
             orientation: "portrait",
+            dir: "ltr",
+            edge_side_panel: {
+                preferred_width: 400,
+            },
+            handle_links: "preferred",
+            launch_handler: {
+                client_mode: ["navigate-existing", "auto"],
+            },
         },
         workbox: {
             navigateFallback: "/",
