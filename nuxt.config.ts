@@ -16,7 +16,8 @@ export default defineNuxtConfig({
         "@vite-pwa/nuxt",
         "@nuxtjs/device",
         "@nuxtjs/seo",
-        "@nuxtjs/i18n",
+        "@nuxt/fonts",
+        "@nuxt/test-utils/module",
     ],
     vite: { plugins: [tailwindcss()] },
     css: ["~/assets/css/main.css"],
@@ -155,13 +156,5 @@ export default defineNuxtConfig({
                 light: "#ffffff",
             },
         },
-    },
-    i18n: {
-        defaultLocale: "ru",
-        locales: [
-            { code: "ru", name: "Русский" },
-            { code: "en", name: "English" },
-        ],
-        skipSettingLocaleOnNavigate: true,
     },
 });
