@@ -145,6 +145,7 @@ export default defineNuxtConfig({
         registerType: "autoUpdate",
         workbox: {
             globPatterns: ["**/*.{js,css,html,ico,png,svg}"],
+            maximumFileSizeToCacheInBytes: 10000000,
         },
     },
     site: {
