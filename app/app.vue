@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { UiToaster } from "#components";
 import "vue-sonner/style.css";
 </script>
 
@@ -12,8 +11,9 @@ import "vue-sonner/style.css";
                 name: 'page',
                 mode: 'out-in',
             }"
+            class="page-enter-active"
         />
-        <UiToaster />
+        <UiToaster rich-colors />
     </NuxtLayout>
 </template>
 

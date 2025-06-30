@@ -8,27 +8,18 @@ if (!session.value) {
 } else {
     nickName = session.value.user.name;
 }
-const pwaIsInstalled = () => {
-    toast("Ура!", { description: "Это PWA!" });
-};
-const pwaIsNotInstalled = () => {
-    toast("Нет!", {
-        description: "Это не PWA! Установите срочно!",
-        action: { label: "О, как!" },
-    });
-};
 </script>
 
 <template>
-    <main class="flex-col">
+    <main class="flex flex-col items-center justify-center gap-3">
         <h1 class="text-4xl">Привет, {{ nickName }}!</h1>
         <UiButton
             @click="
-                if ($pwa?.isPWAInstalled === true) {
-                    pwaIsInstalled();
-                } else {
-                    pwaIsNotInstalled();
-                }
+                () =>
+                    toast.error('Ошибка!', {
+                        description: 'Успех!',
+                        action: { label: 'О, как!' },
+                    })
             "
         >
             Это PWA?

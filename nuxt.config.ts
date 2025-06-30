@@ -30,9 +30,6 @@ export default defineNuxtConfig({
         experimental: {
             openAPI: true,
         },
-        routeRules: {
-            registerWebManifestInRouteRules: {},
-        },
     },
     turnstile: {
         siteKey: process.env.NUXT_PUBLIC_TURNSTILE_SITE_KEY,
