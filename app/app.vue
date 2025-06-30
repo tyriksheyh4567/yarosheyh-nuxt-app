@@ -13,7 +13,7 @@ import "vue-sonner/style.css";
             }"
             class="page-enter-active"
         />
-        <UiToaster rich-colors />
+        <UiToaster rich-colors theme="system" />
     </NuxtLayout>
 </template>
 
