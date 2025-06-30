@@ -22,7 +22,7 @@ if (!session.value) {
                     })
             "
         >
-            Это PWA?
+            Кликни сюда!
         </UiButton>
     </main>
 </template>
