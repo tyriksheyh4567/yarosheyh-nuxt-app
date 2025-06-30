@@ -5,26 +5,16 @@ import "vue-sonner/style.css";
 <template>
     <NuxtLayout>
         <NuxtPwaAssets />
-        <NuxtLoadingIndicator />
         <NuxtPage
             :transition="{
                 name: 'page',
                 mode: 'out-in',
+                enterActiveClass: 'transition-all duration-300',
+                enterFromClass: 'opacity-0',
+                leaveActiveClass: 'transition-all duration-300',
+                leaveToClass: 'opacity-0',
             }"
-            class="page-enter-active"
         />
-        <UiToaster rich-colors theme="system" />
+        <UiToaster theme="system" />
     </NuxtLayout>
 </template>
-
-<style>
-.page-enter-active,
-.page-leave-active {
-    transition: all 0.3s;
-}
-
-.page-enter-from,
-.page-leave-to {
-    opacity: 0;
-}
-</style>
