@@ -160,7 +160,4 @@ export default defineNuxtConfig({
 		domains: ["yarosheyh.ru"],
 		dir: "~/assets/img",
 	},
-	typescript: {
-		typeCheck: true,
-	},
 });
