@@ -74,6 +74,8 @@
     "prettier": "^3.5.3",
     "prettier-oxc-parser": "^0.1.1",
     "prettier-plugin-tailwindcss": "^0.6.12",
+    "typescript": "^5.8.3",
+    "vue-tsc": "^2.2.10",
     "workbox-build": "^7.3.0",
     "workbox-core": "^7.3.0",
     "workbox-routing": "^7.3.0",
