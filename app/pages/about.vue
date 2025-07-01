@@ -17,8 +17,8 @@
 				Это мой личный веб-сайт.
 			</UiCardItem>
 			<UiCardItem :translate-z="100" :rotate-x="20" :rotate-z="-10" class="mt-4 w-full">
-				<NuxtImg
-					src="about.png"
+				<img
+					src="~/assets/img/about.png"
 					height="1000"
 					width="1000"
 					class="h-60 w-full rounded-xl object-cover group-hover/card:shadow-xl"
