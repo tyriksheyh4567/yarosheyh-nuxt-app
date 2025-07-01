@@ -17,6 +17,7 @@ export default defineNuxtConfig({
 		"@nuxtjs/device",
 		"@nuxtjs/seo",
 		"@nuxt/fonts",
+		"@nuxt/image",
 	],
 	vite: { plugins: [tailwindcss()] },
 	css: ["~/assets/css/main.css"],
@@ -153,5 +154,10 @@ export default defineNuxtConfig({
 				light: "#ffffff",
 			},
 		},
+	},
+	image: {
+		inject: true,
+		domains: ["yarosheyh.ru"],
+		dir: "~/assets/img",
 	},
 });
