@@ -25,7 +25,7 @@
 					alt="thumbnail"
 				/>
 			</UiCardItem>
-			<div class="mt-20 flex items-center justify-between">
+			<div class="flex items-center justify-between">
 				<UiCardItem
 					:translate-z="20"
 					as="a"
